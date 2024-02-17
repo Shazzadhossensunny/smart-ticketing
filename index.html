@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>P-Ticket</title>
+    <!-- style.css link -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- tailwind & daisyUI cdn link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-[raleway]">
+    <!-- header start -->
+    <header>
+      <!-- nav start -->
+      <nav class="container mx-auto py-3">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Destination</a></li>
+                <li><a>Search</a></li>
+              </ul>
+            </div>
+            <a class="text-2xl lg:text-4xl font-extrabold text-[#030712]"
+              >P-Ticket</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 space-x-14">
+              <li class="text-lg font-medium text-[#030712B2]"><a>Home</a></li>
+              <li class="text-lg font-medium text-[#030712B2]"><a>About</a></li>
+              <li class="text-lg font-medium text-[#030712B2]">
+                <a>Destination</a>
+              </li>
+              <li class="text-lg font-medium text-[#030712B2]">
+                <a>Search</a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a
+              class="border border-[#1dd10066] bg-[#1dd1001a] rounded-xl text-xl font-bold py-2 lg:py-4 px-5 lg:px-7 flex gap-2 items-center cursor-pointer"
+              >Bus <img src="images/bus-icon.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </nav>
+      <!-- nav start -->
+      <!-- banner start -->
+      <section>
+        <div class="container mx-auto px-3 lg:px-0">
+          <!-- banner top -->
+          <div
+            class="bg-[linear-gradient(180deg,rgba(3,7,18,0.50),rgba(3,7,18,0.00)),url('images/banner.png')] bg-no-repeat bg-cover bg-bottom rounded-[32px] mt-3"
+          >
+            <div
+              class="flex justify-center items-center text-center h-svh lg:h-[550px]"
+            >
+              <div>
+                <h1 class="text-4xl lg:text-6xl font-extrabold text-white">
+                  End-to-End Travel with <br />
+                  <span class="text-[#1DD100]">P Paribahan</span>
+                </h1>
+                <p
+                  class="text-base lg:text-lg font-normal font-[inter] mt-4 text-white w-full lg:w-[691px]"
+                >
+                  Yes, you can run unit tests and view the results directly
+                  within the app. The integrated testing features allow for a
+                  streamlined .
+                </p>
+                <button id="buyTickets"
+                  class="py-5 px-7 rounded-xl bg-[#1DD100] text-base lg:text-xl font-bold mt-8"
+                >
+                  Buy Tickets
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- banner top -->
+          <!-- banner bottom -->
+          <div
+            class="flex flex-col lg:flex-row gap-6 justify-center translate-y-4 lg:-translate-y-1/2"
+          >
+            <!-- single card -->
+            <div
+              class="rounded-3xl border-b-[3px] border-[#1DD100] bg-white p-8 flex gap-4"
+            >
+              <div>
+                <img src="images/people.png" alt="" />
+              </div>
+              <div>
+                <h3
+                  class="text-2xl lg:text-4xl font-bold font-[inter] text-[#030712]"
+                >
+                  500K+
+                </h3>
+                <p
+                  class="text-base lg:text-lg font-normal font-[inter] text-[#03071299]"
+                >
+                  Registered users
+                </p>
+              </div>
+            </div>
+            <!-- single card -->
+            <!-- single card -->
+            <div
+              class="rounded-3xl border-b-[3px] border-[#1DD100] bg-white p-8 flex gap-4"
+            >
+              <div>
+                <img src="images/ticket-cupon.png" alt="" />
+              </div>
+              <div>
+                <h3
+                  class="text-2xl lg:text-4xl font-bold font-[inter] text-[#030712]"
+                >
+                  1.7 lacks
+                </h3>
+                <p
+                  class="text-base lg:text-lg font-normal font-[inter] text-[#03071299]"
+                >
+                  Tickets sold
+                </p>
+              </div>
+            </div>
+            <!-- single card -->
+            <!-- single card -->
+            <div
+              class="rounded-3xl border-b-[3px] border-[#1DD100] bg-white p-8 flex gap-4"
+            >
+              <div>
+                <img src="images/stoppage.png" alt="" />
+              </div>
+              <div>
+                <h3
+                  class="text-2xl lg:text-4xl font-bold font-[inter] text-[#030712]"
+                >
+                  80K+
+                </h3>
+                <p
+                  class="text-base lg:text-lg font-normal font-[inter] text-[#03071299]"
+                >
+                  Rental partners
+                </p>
+              </div>
+            </div>
+            <!-- single card -->
+          </div>
+          <!-- banner bottom -->
+        </div>
+      </section>
+      <!-- banner end -->
+    </header>
+    <!-- header end -->
+    <main class="px-3 lg:px-0">
+      <!-- offers section start -->
+      <section class="pt-10">
+        <div class="container mx-auto">
+          <div class="text-center mb-7 lg:mb-12">
+            <h2 class="text-[#030712] text-3xl lg:text-[40px] font-bold">
+              Best offers for you
+            </h2>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div
+              class="bg-[#FFBF0F] rounded-3xl flex flex-col lg:flex-row justify-between items-center"
+            >
+              <div
+                class="font-[inter] space-y-3 p-5 lg:p-5 xl:p-12 flex-1 text-center lg:text-left"
+              >
+                <h3 class="text-[#030712cc] text-3xl lg:text-[40px] font-black">
+                  15% OFF
+                </h3>
+                <p class="text-[#030712cc] text-xl font-semibold">
+                  on your next purchase
+                </p>
+                <p class="text-[#03071280] text-lg font-medium">
+                  use by January 2024
+                </p>
+              </div>
+              <div class="hidden lg:block">
+                <img class="h-full" src="images/cupon-devider.png" alt="" />
+              </div>
+              <div
+                class="p-5 lg:p-5 xl:p-12 flex flex-col items-center justify-center space-y-4"
+              >
+                <h3 class="text-[#030712] text-3xl font-bold">NEW15</h3>
+                <p class="text-[#03071266] text-xl font-medium">Coupon Code</p>
+              </div>
+            </div>
+            <div
+              class="bg-[#F78C9C] rounded-3xl flex flex-col lg:flex-row justify-between items-center"
+            >
+              <div
+                class="font-[inter] space-y-3 p-5 lg:p-5 xl:p-12 flex-1 text-center lg:text-left"
+              >
+                <h3 class="text-[#030712cc] text-3xl lg:text-[40px] font-black">
+                  20% OFF
+                </h3>
+                <p class="text-[#030712cc] text-xl font-semibold">
+                  on your next purchase
+                </p>
+                <p class="text-[#03071280] text-lg font-medium">
+                  use by January 2024
+                </p>
+              </div>
+              <div class="hidden lg:block">
+                <img class="h-full" src="images/cupon-devider.png" alt="" />
+              </div>
+              <div
+                class="p-5 lg:p-5 xl:p-12 flex flex-col items-center justify-center space-y-4"
+              >
+                <h3 class="text-[#030712] text-3xl font-bold">Couple 20</h3>
+                <p class="text-[#03071266] text-xl font-medium">Coupon Code</p>
+              </div>
+            </div>
+          </div>
+          <div class="text-center mt-6 lg:mt-16">
+            <button
+              class="rounded-xl py-5 px-7 border border-[#1DD100] text-xl font-bold text-[#1DD100]"
+            >
+              See All Offers
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- offers section end -->
+      <!-- paribahan info section start -->
+      <section id="paribahan-info"
+        class="bg-[#F7F8F8] py-10 lg:py-28 mt-10 lg:mt-28 rounded-t-[88PX] border-t border-[#1DD100]"
+      >
+        <div class="container mx-auto">
+          <!-- heading -->
+          <div class="text-center space-y-6">
+            <h2 class="text-3xl lg:text-[40px] font-bold text-[#030712]">
+              P.H Paribahan
+            </h2>
+            <p
+              class="text-base lg:text-lg font-[inter] font-normal text-[#03071299] w-full lg:w-[736px] mx-auto"
+            >
+              Yes, you can run unit tests and view the results directly within
+              the app. The integrated testing features allow for a streamlined .
+            </p>
+          </div>
+          <!-- heading -->
+          <!-- paribohon info display start -->
+          <div
+            class="bg-white rounded-3xl flex flex-col lg:flex-row mt-12 mx-2 lg:mx-0"
+          >
+            <!-- left star -->
+            <div class="p-4 lg:p-8 flex-1">
+              <!-- bus name and seats -->
+              <div
+                class="flex flex-col lg:flex-row justify-between items-center"
+              >
+                <!-- bus name -->
+                <div
+                  class="flex flex-col items-center lg:items-start lg:flex-row gap-3"
+                >
+                  <div>
+                    <img src="images/bus-logo.png" alt="" />
+                  </div>
+                  <div class="text-center lg:text-left">
+                    <h3 class="text-[#030712] text-2xl lg:text-3xl font-bold">
+                      Greenline Paribahan
+                    </h3>
+                    <p
+                      class="text-base lg:text-lg font-normal font-[inter] text-[#03071299]"
+                    >
+                      Coach-009-WEB ! AC_Business
+                    </p>
+                  </div>
+                </div>
+                <!-- seats button -->
+                <div class="mt-5 lg:mt-0">
+                  <button
+                    class="bg-[#1DD10026] py-3 px-4 flex items-center rounded-xl font-[inter] text-lg font-medium text-[#1DD100] space-x-2"
+                  >
+                    <img src="images/seat-green.png" alt="" /><span>40</span
+                    ><span>Seats left</span>
+                  </button>
+                </div>
+              </div>
+              <!-- bus name and seats -->
+              <!-- route & departure start -->
+              <div class="bg-[#F7F8F8] rounded-3xl p-6 lg:p-8 mt-6">
+                <!-- 1st row -->
+                <div
+                  class="flex justify-between items-center border-b border-[#03071233] border-dashed pb-6"
+                >
+                  <h3
+                    class="text-base lg:text-lg font-semibold text-[#03071299]"
+                  >
+                    Route
+                  </h3>
+                  <h3 class="text-[#030712] text-base lg:text-lg font-semibold">
+                    Dhaka - Sylhet
+                  </h3>
+                </div>
+                <!-- 2nd row -->
+                <div
+                  class="flex justify-between items-center border-b border-[#03071233] border-dashed py-6"
+                >
+                  <h3
+                    class="text-base lg:text-lg font-semibold text-[#03071299]"
+                  >
+                    Departure Time
+                  </h3>
+                  <h3 class="text-[#030712] text-base lg:text-lg font-semibold">
+                    9:00 PM
+                  </h3>
+                </div>
+                <!-- 3rd row -->
+                <div
+                  class="flex flex-col lg:flex-row gap-6 items-center justify-between pt-6"
+                >
+                  <h3
+                    class="bg-[#0307120d] rounded-xl p-5 text-[#030712cc] font-[inter] text-base font-medium w-full text-center"
+                  >
+                    Boarding Point - Laxmipur
+                  </h3>
+                  <h3
+                    class="bg-[#0307120d] rounded-xl p-5 text-[#030712cc] font-[inter] text-base font-medium w-full text-center"
+                  >
+                    Dropping Point - Bogura
+                  </h3>
+                  <h3
+                    class="bg-[#0307120d] rounded-xl p-5 text-[#030712cc] font-[inter] text-base font-medium w-full text-center"
+                  >
+                    Est. Time - 11 Hour
+                  </h3>
+                </div>
+              </div>
+              <!-- route & departure end -->
+            </div>
+            <!-- left end-->
+
+            <!-- middle  start-->
+            <div class="hidden lg:block">
+              <img class="h-full" src="images/info-devider.png" alt="" />
+            </div>
+            <!-- middle end-->
+
+            <!-- right div start -->
+            <div class="p-4 lg:p-16 flex flex-col justify-center items-center">
+              <img src="images/fare.png" alt="" />
+              <h3 class="text-[#030712] text-3xl font-bold mt-6">550 Taka</h3>
+              <p class="text-[#03071299] text-2xl font-semibold mt-2">
+                Per Seat
+              </p>
+            </div>
+            <!-- right div end -->
+          </div>
+          <!-- paribohon info display end -->
+        </div>
+        <div class="container mx-auto">
+          <div
+            class="grid grid-cols-1 lg:grid-cols-12 bg-white rounded-3xl p-4 lg:p-8 mt-7 gap-6 lg:gap-16 mx-2 lg:mx-0"
+          >
+            <!-- left side seat selection -->
+            <div class="col-span-12 lg:col-span-8">
+              <h3 class="text-xl lg:text-2xl font-semibold text-[#030712] mb-6">
+                Select Your Seat
+              </h3>
+              <div
+                class="flex justify-between items-center border-b border-t border-[#03071233] border-dashed py-5"
+              >
+                <p
+                  class="text-[#03071280] flex gap-2 items-center font-[inter] text-base lg:text-lg font-medium"
+                >
+                  <img src="images/seat-gray.png" alt="" />Available
+                </p>
+                <p
+                  class="text-[#1DD100] flex gap-2 items-center font-[inter] text-base lg:text-lg font-medium"
+                >
+                  <img src="images/seat-green-filled.png" alt="" />Selected
+                </p>
+              </div>
+              <div class="flex justify-end mt-6">
+                <span class="bg-[#0307121a] inline-block rounded-xl py-3 px-9"
+                  ><img src="images/wheel.png" alt=""
+                /></span>
+              </div>
+              <!-- seats -->
+              <div class="seats">
+                <!-- 1st row -->
+                <div
+                  class="flex justify-between lg:grid lg:grid-cols-12 items-center mt-6 custom-btn-width"
+                >
+                  <div>
+                    <h3
+                      class="text-[#03071280] text-base lg:text-lg font-medium font-[inter]"
+                    >
+                      A
+                    </h3>
+                  </div>
+                  <div
+                    class="col-span-2 lg:col-span-11 flex gap-4 lg:gap-16 justify-center lg:justify-between"
+                  >
+                    <div class="flex gap-2 lg:gap-8">
+                      <button
+                        id="A1"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                      >
+                        A1
+                      </button>
+                      <button
+                        id="A2"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                      >
+                        A2
+                      </button>
+                    </div>
+                    <div class="flex gap-2 lg:gap-8">
+                      <button
+                        id="A3"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                      >
+                        A3
+                      </button>
+                      <button
+                        id="A4"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                      >
+                        A4
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- 2nd row -->
+                <div
+                  class="flex justify-between lg:grid lg:grid-cols-12 items-center mt-6 custom-btn-width"
+                >
+                  <div>
+                    <h3
+                      class="text-[#03071280] text-base lg:text-lg font-medium font-[inter]"
+                    >
+                      B
+                    </h3>
+                  </div>
+                  <div
+                    class="col-span-2 lg:col-span-11 flex gap-4 lg:gap-16 justify-center lg:justify-between"
+                  >
+                    <div class="flex gap-2 lg:gap-8">
+                      <button
+                        id="B1"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                      >
+                        B1
+                      </button>
+                      <button
+                        id="B2"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                      >
+                        B2
+                      </button>
+                    </div>
+                    <div class="flex gap-2 lg:gap-8">
+                      <button
+                        id="B3"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                      >
+                        B3
+                      </button>
+                      <button
+                        id="B4"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                      >
+                        B4
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- 3rd row -->
+                <div
+                  class="flex justify-between lg:grid lg:grid-cols-12 items-center mt-6 custom-btn-width"
+                >
+                  <div>
+                    <h3
+                      class="text-[#03071280] text-base lg:text-lg font-medium font-[inter]"
+                    >
+                      C
+                    </h3>
+                  </div>
+                  <div
+                    class="col-span-2 lg:col-span-11 flex gap-4 lg:gap-16 justify-center lg:justify-between"
+                  >
+                    <div class="flex gap-2 lg:gap-8">
+                      <button
+                        id="C1"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                      >
+                        C1
+                      </button>
+                      <button
+                        id="C2"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                      >
+                        C2
+                      </button>
+                    </div>
+                    <div class="flex gap-2 lg:gap-8">
+                      <button
+                        id="C3"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                      >
+                        C3
+                      </button>
+                      <button
+                        id="C4"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                      >
+                        C4
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- 4th row -->
+                <div
+                  class="flex justify-between lg:grid lg:grid-cols-12 items-center mt-6 custom-btn-width"
+                >
+                  <div>
+                    <h3
+                      class="text-[#03071280] text-base lg:text-lg font-medium font-[inter]"
+                    >
+                      D
+                    </h3>
+                  </div>
+                  <div
+                    class="col-span-2 lg:col-span-11 flex gap-4 lg:gap-16 justify-center lg:justify-between"
+                  >
+                    <div class="flex gap-2 lg:gap-8">
+                      <button
+                        id="D1"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                      >
+                        D1
+                      </button>
+                      <button
+                        id="D2"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                      >
+                        D2
+                      </button>
+                    </div>
+                    <div class="flex gap-2 lg:gap-8">
+                      <button
+                        id="D3"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                      >
+                        D3
+                      </button>
+                      <button
+                        id="D4"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                      >
+                        D4
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- 5th row -->
+                <div
+                  class="flex justify-between lg:grid lg:grid-cols-12 items-center mt-6 custom-btn-width"
+                >
+                  <div>
+                    <h3
+                      class="text-[#03071280] text-base lg:text-lg font-medium font-[inter]"
+                    >
+                      E
+                    </h3>
+                  </div>
+                  <div
+                    class="col-span-2 lg:col-span-11 flex gap-4 lg:gap-16 justify-center lg:justify-between"
+                  >
+                    <div class="flex gap-2 lg:gap-8">
+                      <button
+                        id="E1"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                      >
+                        E1
+                      </button>
+                      <button
+                        id="E2"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                      >
+                        E2
+                      </button>
+                    </div>
+                    <div class="flex gap-2 lg:gap-8">
+                      <button
+                        id="E3"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                      >
+                        E3
+                      </button>
+                      <button
+                        id="E4"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                      >
+                        E4
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- 6th row -->
+                <div
+                  class="flex justify-between lg:grid lg:grid-cols-12 items-center mt-6 custom-btn-width"
+                >
+                  <div>
+                    <h3
+                      class="text-[#03071280] text-base lg:text-lg font-medium font-[inter]"
+                    >
+                      F
+                    </h3>
+                  </div>
+                  <div
+                    class="col-span-2 lg:col-span-11 flex gap-4 lg:gap-16 justify-center lg:justify-between"
+                  >
+                    <div class="flex gap-2 lg:gap-8">
+                      <button
+                        id="F1"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                      >
+                        F1
+                      </button>
+                      <button
+                        id="F2"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                      >
+                        F2
+                      </button>
+                    </div>
+                    <div class="flex gap-2 lg:gap-8">
+                      <button
+                        id="F3"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                      >
+                        F3
+                      </button>
+                      <button
+                        id="F4"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                      >
+                        F4
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- 7th row -->
+                <div
+                  class="flex justify-between lg:grid lg:grid-cols-12 items-center mt-6 custom-btn-width"
+                >
+                  <div>
+                    <h3
+                      class="text-[#03071280] text-base lg:text-lg font-medium font-[inter]"
+                    >
+                      G
+                    </h3>
+                  </div>
+                  <div
+                    class="col-span-2 lg:col-span-11 flex gap-4 lg:gap-16 justify-center lg:justify-between"
+                  >
+                    <div class="flex gap-2 lg:gap-8">
+                      <button
+                        id="G1"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                      >
+                        G1
+                      </button>
+                      <button
+                        id="G2"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                      >
+                        G2
+                      </button>
+                    </div>
+                    <div class="flex gap-2 lg:gap-8">
+                      <button
+                        id="G3"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                      >
+                        G3
+                      </button>
+                      <button
+                        id="G4"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                      >
+                        G4
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- 8th row -->
+                <div
+                  class="flex justify-between lg:grid lg:grid-cols-12 items-center mt-6 custom-btn-width"
+                >
+                  <div>
+                    <h3
+                      class="text-[#03071280] text-base lg:text-lg font-medium font-[inter]"
+                    >
+                      H
+                    </h3>
+                  </div>
+                  <div
+                    class="col-span-2 lg:col-span-11 flex gap-4 lg:gap-16 justify-center lg:justify-between"
+                  >
+                    <div class="flex gap-2 lg:gap-8">
+                      <button
+                        id="H1"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                      >
+                        H1
+                      </button>
+                      <button
+                        id="H2"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                      >
+                        H2
+                      </button>
+                    </div>
+                    <div class="flex gap-2 lg:gap-8">
+                      <button
+                        id="H3"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                      >
+                        H3
+                      </button>
+                      <button
+                        id="H4"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                      >
+                        H4
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- 9th row -->
+                <div
+                  class="flex justify-between lg:grid lg:grid-cols-12 items-center mt-6 custom-btn-width"
+                >
+                  <div>
+                    <h3
+                      class="text-[#03071280] text-base lg:text-lg font-medium font-[inter]"
+                    >
+                      I
+                    </h3>
+                  </div>
+                  <div
+                    class="col-span-2 lg:col-span-11 flex gap-4 lg:gap-16 justify-center lg:justify-between"
+                  >
+                    <div class="flex gap-2 lg:gap-8">
+                      <button
+                        id="I1"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                      >
+                        I1
+                      </button>
+                      <button
+                        id="I2"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                      >
+                        I2
+                      </button>
+                    </div>
+                    <div class="flex gap-2 lg:gap-8">
+                      <button
+                        id="I3"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                      >
+                        I3
+                      </button>
+                      <button
+                        id="I4"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                      >
+                        I4
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- 10th row -->
+                <div
+                  class="flex justify-between lg:grid lg:grid-cols-12 items-center mt-6 custom-btn-width"
+                >
+                  <div>
+                    <h3
+                      class="text-[#03071280] text-base lg:text-lg font-medium font-[inter]"
+                    >
+                      J
+                    </h3>
+                  </div>
+                  <div
+                    class="col-span-2 lg:col-span-11 flex gap-4 lg:gap-16 justify-center lg:justify-between"
+                  >
+                    <div class="flex gap-2 lg:gap-8">
+                      <button
+                        id="J1"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                      >
+                        j1
+                      </button>
+                      <button
+                        id="J2"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                      >
+                        J2
+                      </button>
+                    </div>
+                    <div class="flex gap-2 lg:gap-8">
+                      <button
+                        id="J3"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                      >
+                        J3
+                      </button>
+                      <button
+                        id="J4"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                      >
+                        J4
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- seats -->
+            </div>
+            <!-- left side seat selection -->
+            <!-- seat add to cart -->
+            <div class="col-span-12 lg:col-span-4">
+              <div class="border-b border-[#03071233] border-dashed pb-5">
+                <h3 class="text-xl lg:text-2xl font-semibold text-[#030712]">
+                  Select Your Seat
+                </h3>
+              </div>
+              <!-- seat and price show container -->
+              <div class="bg-[#F7F8F8] rounded-xl p-4 lg:p-8 my-6">
+                <div
+                  class="flex justify-between text-[#030712] text-base font-medium font-[inter] border-b border-[#03071233] border-dashed pb-4"
+                >
+                  <h3>
+                    Seat<span
+                      class="indicator-item badge bg-[#1DD100] text-white ml-1"
+                      >0</span
+                    >
+                  </h3>
+                  <h3>Class</h3>
+                  <h3>Price</h3>
+                </div>
+                <div
+                  id="seat-list-container"
+                  class="border-b border-[#03071233] border-solidm min-h-20"
+                ></div>
+                <div
+                  class="flex justify-between text-[#030712] text-base font-medium font-[inter] mt-4"
+                >
+                  <h3>Total Price</h3>
+                  <h3>BDT <span>0</span></h3>
+                </div>
+                <div
+                  class="flex justify-between text-[#030712] text-base font-medium font-[inter] mt-4"
+                >
+                  <h3>Discount Price</h3>
+                  <h3>BDT <span>0</span></h3>
+                </div>
+                <div class="join w-full mt-4">
+                  <input
+                    type="text"
+                    placeholder="Have any coupon?"
+                    class="input join-item w-full"
+                  />
+                  <button class="btn join-item bg-[#1DD100] text-white">
+                    Apply
+                  </button>
+                </div>
+                <div
+                  class="flex justify-between text-[#030712] text-base font-medium font-[inter] mt-4"
+                >
+                  <h3>Grand Total</h3>
+                  <h3>BDT <span>0</span></h3>
+                </div>
+              </div>
+              <!-- seat and price show container -->
+              <!-- form start -->
+              <form>
+                <div class="form-control w-full mb-6">
+                  <label class="label mb-4">
+                    <span
+                      class="text-[#030712] text-base font-semibold font-[inter]"
+                      >Passenger Name<sup>*</sup></span
+                    >
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Enter your name"
+                    class="input input-bordered w-full font-[inter] border-[#0307121a]"
+                  />
+                </div>
+                <div class="form-control w-full mb-6">
+                  <label class="label mb-4">
+                    <span
+                      class="text-[#030712] text-base font-semibold font-[inter]"
+                      >Phone Number<sup>*</sup></span
+                    >
+                  </label>
+                  <input
+                    type="number"
+                    placeholder="Enter your phone number"
+                    class="input input-bordered w-full font-[inter] border-[#0307121a]"
+                  />
+                </div>
+                <div class="form-control w-full mb-6">
+                  <label class="label mb-4">
+                    <span
+                      class="text-[#030712] text-base font-semibold font-[inter]"
+                      >Email ID</span
+                    >
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Enter your email id"
+                    class="input input-bordered w-full font-[inter] border-[#0307121a]"
+                  />
+                </div>
+                <button
+                  onclick="my_modal_5.showModal()"
+                  class="w-full p-5 rounded-2xl bg-[#1DD100] text-white text-xl font-extrabold text-center"
+                >
+                  Next
+                </button>
+              </form>
+              <div class="flex justify-around mt-6">
+                <p
+                  class="text-[#03071299] font-[inter] text-base font-normal underline"
+                >
+                  Terms and Conditions
+                </p>
+                <p
+                  class="text-[#03071299] font-[inter] text-base font-normal underline"
+                >
+                  Cancellation Policy
+                </p>
+              </div>
+
+              <!-- form end -->
+            </div>
+            <!-- seat add to cart -->
+          </div>
+        </div>
+      </section>
+      <!-- paribahan section end -->
+    </main>
+    <footer class="bg-[#030712] py-10 lg:py-28 px-3 lg:px-0">
+      <div class="container mx-auto">
+        <div
+          class="flex flex-col lg:flex-row justify-between border-b border-[#FFFFFF4D] border-dashed pb-12"
+        >
+          <div>
+            <h2 class="text-white text-2xl lg:text-4xl font-extrabold mb-4">
+              P-Ticket
+            </h2>
+            <p
+              class="text-[#FFFFFFCC] text-lg font-[inter] font-normal w-full lg:w-[374px]"
+            >
+              P-Ticket is a digital platform to make your daily commuting
+              better.
+            </p>
+          </div>
+          <div>
+            <p class="text-white text-lg lg:text-xl font-semibold mb-5">
+              Download our app
+            </p>
+            <img src="images/playstore.png" alt="" />
+          </div>
+        </div>
+        <div
+          class="flex flex-col lg:flex-row justify-between items-center pt-8"
+        >
+          <div>
+            <p class="text-[#FFFFFFB2] text-base font-[inter] font-normal">
+              @all rights reserved, P-Ticket services limited.2024
+            </p>
+          </div>
+          <div class="flex space-x-2 lg:space-x-8 mt-5 lg:mt-0">
+            <a
+              class="inline-block text-white font-[inter] text-base font-medium cursor-pointer"
+              >Terms & condition</a
+            >
+            <a
+              class="inline-block text-white font-[inter] text-base font-medium cursor-pointer"
+              >Return & refund policy</a
+            >
+            <a
+              class="inline-block text-white font-[inter] text-base font-medium cursor-pointer"
+              >Privacy policy</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Open the modal using ID.showModal() method -->
+    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+      <div class="modal-box text-center bg-white p-14">
+        <div class="flex justify-center items-center mb-9">
+          <img src="images/success.png" alt="">
+        </div>
+        <h3 class="font-bold text-2xl text-[#27AE60] mb-9">SUCCESS</h3>
+        <p class="text-[#4A4A4A] text-xl font-medium mb-3">Thank you for Booking Our Bus Seats.
+          We are working hard to find the best service and deals for you. </p>
+          <p class="text-[#4A4A4A] text-xl font-light">Shortly you will find a confirmation in your email.</p>
+        <div class="modal-action justify-center mt-5">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn bg-[#27AE60] rounded-full px-4 w-full lg:w-[300px] text-white">Continue</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+    <script src="js/main.js"></script>
+  </body>
+</html>
