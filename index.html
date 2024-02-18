@@ -210,7 +210,7 @@
               <div
                 class="p-5 lg:p-5 xl:p-12 flex flex-col items-center justify-center space-y-4"
               >
-                <h3 class="text-[#030712] text-3xl font-bold">NEW15</h3>
+                <p class="text-[#030712] text-3xl font-bold">NEW15</p>
                 <p class="text-[#03071266] text-xl font-medium">Coupon Code</p>
               </div>
             </div>
@@ -302,7 +302,7 @@
                   <button
                     class="bg-[#1DD10026] py-3 px-4 flex items-center rounded-xl font-[inter] text-lg font-medium text-[#1DD100] space-x-2"
                   >
-                    <img src="images/seat-green.png" alt="" /><span>40</span
+                    <img src="images/seat-green.png" alt="" /><span id="left-seats">8</span
                     ><span>Seats left</span>
                   </button>
                 </div>
@@ -370,7 +370,7 @@
             <!-- right div start -->
             <div class="p-4 lg:p-16 flex flex-col justify-center items-center">
               <img src="images/fare.png" alt="" />
-              <h3 class="text-[#030712] text-3xl font-bold mt-6">550 Taka</h3>
+              <h3 class="text-[#030712] text-3xl font-bold mt-6"><span id="ticket-price">550</span>Taka</h3>
               <p class="text-[#03071299] text-2xl font-semibold mt-2">
                 Per Seat
               </p>
@@ -408,7 +408,7 @@
                 /></span>
               </div>
               <!-- seats -->
-              <div class="seats">
+              <div id="seat-container" class="seats">
                 <!-- 1st row -->
                 <div
                   class="flex justify-between lg:grid lg:grid-cols-12 items-center mt-6 custom-btn-width"
@@ -426,13 +426,13 @@
                     <div class="flex gap-2 lg:gap-8">
                       <button
                         id="A1"
-                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl seat-btn"
                       >
                         A1
                       </button>
                       <button
                         id="A2"
-                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl seat-btn"
                       >
                         A2
                       </button>
@@ -440,13 +440,13 @@
                     <div class="flex gap-2 lg:gap-8">
                       <button
                         id="A3"
-                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl seat-btn"
                       >
                         A3
                       </button>
                       <button
                         id="A4"
-                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl seat-btn"
                       >
                         A4
                       </button>
@@ -470,13 +470,13 @@
                     <div class="flex gap-2 lg:gap-8">
                       <button
                         id="B1"
-                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl seat-btn"
                       >
                         B1
                       </button>
                       <button
                         id="B2"
-                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl seat-btn"
                       >
                         B2
                       </button>
@@ -484,371 +484,20 @@
                     <div class="flex gap-2 lg:gap-8">
                       <button
                         id="B3"
-                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl seat-btn"
                       >
                         B3
                       </button>
                       <button
                         id="B4"
-                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
+                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl seat-btn"
                       >
                         B4
                       </button>
                     </div>
                   </div>
                 </div>
-                <!-- 3rd row -->
-                <div
-                  class="flex justify-between lg:grid lg:grid-cols-12 items-center mt-6 custom-btn-width"
-                >
-                  <div>
-                    <h3
-                      class="text-[#03071280] text-base lg:text-lg font-medium font-[inter]"
-                    >
-                      C
-                    </h3>
-                  </div>
-                  <div
-                    class="col-span-2 lg:col-span-11 flex gap-4 lg:gap-16 justify-center lg:justify-between"
-                  >
-                    <div class="flex gap-2 lg:gap-8">
-                      <button
-                        id="C1"
-                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
-                      >
-                        C1
-                      </button>
-                      <button
-                        id="C2"
-                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
-                      >
-                        C2
-                      </button>
-                    </div>
-                    <div class="flex gap-2 lg:gap-8">
-                      <button
-                        id="C3"
-                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
-                      >
-                        C3
-                      </button>
-                      <button
-                        id="C4"
-                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
-                      >
-                        C4
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <!-- 4th row -->
-                <div
-                  class="flex justify-between lg:grid lg:grid-cols-12 items-center mt-6 custom-btn-width"
-                >
-                  <div>
-                    <h3
-                      class="text-[#03071280] text-base lg:text-lg font-medium font-[inter]"
-                    >
-                      D
-                    </h3>
-                  </div>
-                  <div
-                    class="col-span-2 lg:col-span-11 flex gap-4 lg:gap-16 justify-center lg:justify-between"
-                  >
-                    <div class="flex gap-2 lg:gap-8">
-                      <button
-                        id="D1"
-                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
-                      >
-                        D1
-                      </button>
-                      <button
-                        id="D2"
-                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
-                      >
-                        D2
-                      </button>
-                    </div>
-                    <div class="flex gap-2 lg:gap-8">
-                      <button
-                        id="D3"
-                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
-                      >
-                        D3
-                      </button>
-                      <button
-                        id="D4"
-                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
-                      >
-                        D4
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <!-- 5th row -->
-                <div
-                  class="flex justify-between lg:grid lg:grid-cols-12 items-center mt-6 custom-btn-width"
-                >
-                  <div>
-                    <h3
-                      class="text-[#03071280] text-base lg:text-lg font-medium font-[inter]"
-                    >
-                      E
-                    </h3>
-                  </div>
-                  <div
-                    class="col-span-2 lg:col-span-11 flex gap-4 lg:gap-16 justify-center lg:justify-between"
-                  >
-                    <div class="flex gap-2 lg:gap-8">
-                      <button
-                        id="E1"
-                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
-                      >
-                        E1
-                      </button>
-                      <button
-                        id="E2"
-                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
-                      >
-                        E2
-                      </button>
-                    </div>
-                    <div class="flex gap-2 lg:gap-8">
-                      <button
-                        id="E3"
-                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
-                      >
-                        E3
-                      </button>
-                      <button
-                        id="E4"
-                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
-                      >
-                        E4
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <!-- 6th row -->
-                <div
-                  class="flex justify-between lg:grid lg:grid-cols-12 items-center mt-6 custom-btn-width"
-                >
-                  <div>
-                    <h3
-                      class="text-[#03071280] text-base lg:text-lg font-medium font-[inter]"
-                    >
-                      F
-                    </h3>
-                  </div>
-                  <div
-                    class="col-span-2 lg:col-span-11 flex gap-4 lg:gap-16 justify-center lg:justify-between"
-                  >
-                    <div class="flex gap-2 lg:gap-8">
-                      <button
-                        id="F1"
-                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
-                      >
-                        F1
-                      </button>
-                      <button
-                        id="F2"
-                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
-                      >
-                        F2
-                      </button>
-                    </div>
-                    <div class="flex gap-2 lg:gap-8">
-                      <button
-                        id="F3"
-                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
-                      >
-                        F3
-                      </button>
-                      <button
-                        id="F4"
-                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
-                      >
-                        F4
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <!-- 7th row -->
-                <div
-                  class="flex justify-between lg:grid lg:grid-cols-12 items-center mt-6 custom-btn-width"
-                >
-                  <div>
-                    <h3
-                      class="text-[#03071280] text-base lg:text-lg font-medium font-[inter]"
-                    >
-                      G
-                    </h3>
-                  </div>
-                  <div
-                    class="col-span-2 lg:col-span-11 flex gap-4 lg:gap-16 justify-center lg:justify-between"
-                  >
-                    <div class="flex gap-2 lg:gap-8">
-                      <button
-                        id="G1"
-                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
-                      >
-                        G1
-                      </button>
-                      <button
-                        id="G2"
-                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
-                      >
-                        G2
-                      </button>
-                    </div>
-                    <div class="flex gap-2 lg:gap-8">
-                      <button
-                        id="G3"
-                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
-                      >
-                        G3
-                      </button>
-                      <button
-                        id="G4"
-                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
-                      >
-                        G4
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <!-- 8th row -->
-                <div
-                  class="flex justify-between lg:grid lg:grid-cols-12 items-center mt-6 custom-btn-width"
-                >
-                  <div>
-                    <h3
-                      class="text-[#03071280] text-base lg:text-lg font-medium font-[inter]"
-                    >
-                      H
-                    </h3>
-                  </div>
-                  <div
-                    class="col-span-2 lg:col-span-11 flex gap-4 lg:gap-16 justify-center lg:justify-between"
-                  >
-                    <div class="flex gap-2 lg:gap-8">
-                      <button
-                        id="H1"
-                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
-                      >
-                        H1
-                      </button>
-                      <button
-                        id="H2"
-                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
-                      >
-                        H2
-                      </button>
-                    </div>
-                    <div class="flex gap-2 lg:gap-8">
-                      <button
-                        id="H3"
-                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
-                      >
-                        H3
-                      </button>
-                      <button
-                        id="H4"
-                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
-                      >
-                        H4
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <!-- 9th row -->
-                <div
-                  class="flex justify-between lg:grid lg:grid-cols-12 items-center mt-6 custom-btn-width"
-                >
-                  <div>
-                    <h3
-                      class="text-[#03071280] text-base lg:text-lg font-medium font-[inter]"
-                    >
-                      I
-                    </h3>
-                  </div>
-                  <div
-                    class="col-span-2 lg:col-span-11 flex gap-4 lg:gap-16 justify-center lg:justify-between"
-                  >
-                    <div class="flex gap-2 lg:gap-8">
-                      <button
-                        id="I1"
-                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
-                      >
-                        I1
-                      </button>
-                      <button
-                        id="I2"
-                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
-                      >
-                        I2
-                      </button>
-                    </div>
-                    <div class="flex gap-2 lg:gap-8">
-                      <button
-                        id="I3"
-                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
-                      >
-                        I3
-                      </button>
-                      <button
-                        id="I4"
-                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
-                      >
-                        I4
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <!-- 10th row -->
-                <div
-                  class="flex justify-between lg:grid lg:grid-cols-12 items-center mt-6 custom-btn-width"
-                >
-                  <div>
-                    <h3
-                      class="text-[#03071280] text-base lg:text-lg font-medium font-[inter]"
-                    >
-                      J
-                    </h3>
-                  </div>
-                  <div
-                    class="col-span-2 lg:col-span-11 flex gap-4 lg:gap-16 justify-center lg:justify-between"
-                  >
-                    <div class="flex gap-2 lg:gap-8">
-                      <button
-                        id="J1"
-                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
-                      >
-                        j1
-                      </button>
-                      <button
-                        id="J2"
-                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
-                      >
-                        J2
-                      </button>
-                    </div>
-                    <div class="flex gap-2 lg:gap-8">
-                      <button
-                        id="J3"
-                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
-                      >
-                        J3
-                      </button>
-                      <button
-                        id="J4"
-                        class="min-w-[55px] md:min-w-[80px] xl:min-w-[120px] text-[#03071280] text-base lg:text-lg font-medium font-[inter] py-2 lg:py-4 px-4 lg:px-11 bg-[#F7F8F8] rounded-xl"
-                      >
-                        J4
-                      </button>
-                    </div>
-                  </div>
-                </div>
+
               </div>
 
               <!-- seats -->
@@ -867,7 +516,7 @@
                   class="flex justify-between text-[#030712] text-base font-medium font-[inter] border-b border-[#03071233] border-dashed pb-4"
                 >
                   <h3>
-                    Seat<span
+                    Seat<span id="add-seat"
                       class="indicator-item badge bg-[#1DD100] text-white ml-1"
                       >0</span
                     >
@@ -883,21 +532,15 @@
                   class="flex justify-between text-[#030712] text-base font-medium font-[inter] mt-4"
                 >
                   <h3>Total Price</h3>
-                  <h3>BDT <span>0</span></h3>
+                  <h3>BDT <span id="total-price">0</span></h3>
                 </div>
-                <div
-                  class="flex justify-between text-[#030712] text-base font-medium font-[inter] mt-4"
-                >
-                  <h3>Discount Price</h3>
-                  <h3>BDT <span>0</span></h3>
-                </div>
-                <div class="join w-full mt-4">
-                  <input
+                <div id="coupon-container" class="join w-full mt-4">
+                  <input id="discount-input"
                     type="text"
                     placeholder="Have any coupon?"
                     class="input join-item w-full"
                   />
-                  <button class="btn join-item bg-[#1DD100] text-white">
+                  <button id="discount-btn" class="btn join-item bg-[#1DD100] text-white">
                     Apply
                   </button>
                 </div>
@@ -905,7 +548,7 @@
                   class="flex justify-between text-[#030712] text-base font-medium font-[inter] mt-4"
                 >
                   <h3>Grand Total</h3>
-                  <h3>BDT <span>0</span></h3>
+                  <h3>BDT <span id="grand-total">0</span></h3>
                 </div>
               </div>
               <!-- seat and price show container -->
@@ -919,7 +562,7 @@
                     >
                   </label>
                   <input
-                    type="text"
+                    type="text" id="passenger-name"
                     placeholder="Enter your name"
                     class="input input-bordered w-full font-[inter] border-[#0307121a]"
                   />
@@ -932,7 +575,7 @@
                     >
                   </label>
                   <input
-                    type="number"
+                    type="number" id="phone-number"
                     placeholder="Enter your phone number"
                     class="input input-bordered w-full font-[inter] border-[#0307121a]"
                   />
@@ -945,15 +588,14 @@
                     >
                   </label>
                   <input
-                    type="text"
+                    type="text" id="email-id"
                     placeholder="Enter your email id"
                     class="input input-bordered w-full font-[inter] border-[#0307121a]"
                   />
                 </div>
                 <button
-                  onclick="my_modal_5.showModal()"
-                  class="w-full p-5 rounded-2xl bg-[#1DD100] text-white text-xl font-extrabold text-center"
-                >
+                  onclick="showModel()" id="next-btn"
+                  class="w-full p-5 rounded-2xl bg-[#1DD100] text-white text-xl font-extrabold text-center" disabled>
                   Next
                 </button>
               </form>
@@ -1026,9 +668,9 @@
         </div>
       </div>
     </footer>
-    <!-- Open the modal using ID.showModal() method -->
-    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-      <div class="modal-box text-center bg-white p-14">
+    <!-- modal -->
+    <div id="model" class="mx-auto  model hidden ">
+      <div class="text-center bg-white p-14 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-xl">
         <div class="flex justify-center items-center mb-9">
           <img src="images/success.png" alt="">
         </div>
@@ -1036,14 +678,16 @@
         <p class="text-[#4A4A4A] text-xl font-medium mb-3">Thank you for Booking Our Bus Seats.
           We are working hard to find the best service and deals for you. </p>
           <p class="text-[#4A4A4A] text-xl font-light">Shortly you will find a confirmation in your email.</p>
-        <div class="modal-action justify-center mt-5">
-          <form method="dialog">
-            <!-- if there is a button in form, it will close the modal -->
-            <button class="btn bg-[#27AE60] rounded-full px-4 w-full lg:w-[300px] text-white">Continue</button>
-          </form>
+        <div class="flex justify-center mt-5">
+
+            <button id="closeBtn" class="btn bg-[#27AE60] rounded-full px-4 w-full lg:w-[300px] text-white">Continue</button>
+
         </div>
       </div>
-    </dialog>
+    </div>
+
+
     <script src="js/main.js"></script>
   </body>
+
 </html>
