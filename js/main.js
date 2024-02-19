@@ -1,4 +1,4 @@
-let seatCount = 8;
+let seatCount = 40;
 let addCount = 0;
 let sum = 0;
 
@@ -13,30 +13,37 @@ window.onbeforeunload = function () {
 
 // seats
 const seats = document.getElementsByClassName("seat-btn");
-
 for (const seat of seats) {
   seat.addEventListener("click", function (e) {
+  // 4 ticket buy disable all button
+ if (addCount === 4) {
+  for (const seat of seats) {
+    seat.setAttribute("disabled", true);
+    alert("You don't Purchase More Then 4 Tickets")
+    return;
+  }
+}
     // button target
     const selectSeat = e.target;
     const selectSeatId = e.target.id;
     selectSeat.style.backgroundColor = "#1DD100";
     selectSeat.setAttribute("disabled", true);
 
+
     // left seat
     const leftSeats = document.getElementById("left-seats");
     seatCount = seatCount - 1;
     leftSeats.innerText = seatCount;
 
+
+
     // seat add
     const addSeat = document.getElementById("add-seat");
     addCount = addCount + 1;
     addSeat.innerText = addCount;
-    // 4 ticket buy disable all button
-    if (addCount === 4) {
-      for (const seat of seats) {
-        seat.setAttribute("disabled", true);
-      }
-    }
+
+
+
 
     // set container & append
     const seatContainer = document.getElementById("seat-list-container");
@@ -69,12 +76,17 @@ document.getElementById("discount-btn").addEventListener("click", function () {
   if (discountInput === "NEW15") {
     const discount = (sum * 15) / 100;
     const grandTotal = document.getElementById("grand-total");
+    const discountPrice = document.getElementById('discount-price');
+    discountPrice.innerText = discount;
     const afterDiscountTotal = sum - discount;
+
     grandTotal.innerText = afterDiscountTotal;
     couponContainer.classList.add("hidden");
   } else if (discountInput === "Couple 20") {
     const discount = (sum * 20) / 100;
     const grandTotal = document.getElementById("grand-total");
+    const discountPrice = document.getElementById('discount-price');
+    discountPrice.innerText = discount;
     const afterDiscountTotal = sum - discount;
     grandTotal.innerText = afterDiscountTotal;
     couponContainer.classList.add("hidden");
@@ -93,17 +105,24 @@ document.getElementById("closeBtn").addEventListener("click", function () {
   model.classList.add("hidden");
 });
 
-// Event listener for keyup on input fields
+
+//  input fields
 document.addEventListener("keyup", function () {
   const passengerName = document.getElementById("passenger-name").value;
   const phoneNumber = document.getElementById("phone-number").value;
   const emailId = document.getElementById("email-id").value;
   const nextBtn = document.getElementById("next-btn");
 
-  // Check if both seat is selected and phone number is inputted
+// Check if both seat is selected and phone number is inputted
   if (addCount > 0 && phoneNumber.trim() !== "") {
     nextBtn.removeAttribute("disabled");
   } else {
     nextBtn.setAttribute("disabled", "disabled");
   }
+});
+// reload window
+document.getElementById('closeBtn').addEventListener('click', function() {
+  setTimeout(() => {
+    location.reload();
+  },1000);
 });
