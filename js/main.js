@@ -53,8 +53,8 @@ for (const seat of seats) {
     const seat = document.createElement("p");
     const busClass = document.createElement("p");
     const price = document.createElement("p");
-    seat.innerText = addCount;
-    busClass.innerText = selectSeatId;
+    seat.innerText = selectSeatId;
+    busClass.innerText = "Economy";
     price.innerText = convertTicketPrice;
     div.appendChild(seat);
     div.appendChild(busClass);
